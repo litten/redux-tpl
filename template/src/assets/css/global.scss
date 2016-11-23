@@ -1,0 +1,117 @@
+@charset "utf-8";
+@import "custom-variables";
+@import "/node_modules/imui/components/style/reset";
+
+body {
+  font-family: "Hiragino Sans GB", "Microsoft Yahei", arial, "Helvetica Neue", Helvetica, STHeiTi, sans-serif;
+}
+
+button {
+  outline: none;
+}
+
+#react-body {
+  width: 950px;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid $grayE;
+  margin: 1em 0;
+  padding: 0;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+.hide {
+  display: none;
+}
+
+.hd-title {
+  font-size: 22px;
+  margin: 0 12px 30px 0;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+a, input[type='checkbox'] {
+  cursor: pointer;
+}
+
+// 日历
+.im-datepicker .im-text {
+  width: 125px;
+}
+
+.im-text {
+  width: 140px;
+}
+
+.im-form-row {
+  clear: both;
+  position: relative;
+  display: inline-block;
+  margin: 0 15px 0 0;
+}
+
+.im-msg--success, .im-msg--info {
+  display: none !important;
+}
+
+.crm-inline-form {
+  position: relative;
+  .im-btn {
+    display: block;
+  }
+  .im-label, .im-validator {
+    display: inline-block;
+  }
+  .im-label {
+    width: auto;
+  }
+  .collapse-btn {
+    background-color: transparent !important;
+    right: 0;
+  }
+}
+
+.color-orange {
+  color: $orange;
+}
+
+.color-green {
+  color: $green;
+}
+
+.weak-font {
+  color: $colorWeakFont;
+  font-size: small;
+}
+
+.detail-title {
+  display: block;
+
+  h2, h3 {
+    display: inline-block;
+  }
+  span {
+    margin-left: 5px;
+  }
+}
+
+body.hidden-important {
+  overflow: hidden !important;
+}
