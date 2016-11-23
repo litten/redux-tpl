@@ -4,7 +4,6 @@ module.exports = {
       if (v1 || v2) {
         return options.fn(this);
       }
-
       return options.inverse(this);
     }
   },
@@ -49,6 +48,21 @@ module.exports = {
           "short": "none"
         }
       ]
+    },
+    "tdw": {
+      "type": "string",
+      "message": "tdw opername",
+      "default": "Edu"
+    },
+    "isd": {
+      "type": "string",
+      "message": "isd id",
+      "default": "10241024"
+    },
+    "badjs": {
+      "type": "string",
+      "message": "badjs id",
+      "default": "10241024"
     },
     "unit": {
       "type": "confirm",

@@ -4,8 +4,8 @@ import bkn from '@tencent/bkn';
 
 // 数据上报设置
 eduReport.config({
-  module: 'xxx',
-  opername: 'xxx',
+  module: '',
+  opername: '{{ tdw }}',
   uin: 0,  // 必填
   ts: '',  // 必填，留空就行
 });

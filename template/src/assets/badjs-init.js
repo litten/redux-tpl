@@ -2,7 +2,7 @@
 
 // badjs初始化
 BJ_REPORT.init({
-  id: 10241024,
+  id: {{ badjs }},
   ignore: [],
   repeat: 1
 });

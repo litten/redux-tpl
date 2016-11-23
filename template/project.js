@@ -1,6 +1,6 @@
 module.exports = {
   // 站点相关，项目名
-  name: 'ke.qq.com.crm',
+  name: 'ke.qq.com.{{ name }}',
   //ARS发布相关配置
   ars: {
     //以支持自定义拆单发布
@@ -18,11 +18,11 @@ module.exports = {
     buildCommand: {
       'development': {
         command: 'npm',
-        args: []
+        args: ['run', 'jbdist']
       },
       'production': {
         command: 'npm',
-        args: []
+        args: ['run', 'jbdist']
       }
     }
   }
