@@ -41,14 +41,5 @@
         "react-router-redux": "^4.0.5",
         "redux": "^3.6.0",
         "redux-thunk": "^2.1.0"
-    },
-    "devDependencies": {
-        "fis3": "^3.4.25",
-        "fis-parser-babel-5.x": "^1.4.0",
-        "fis-parser-node-sass": "^1.0.1",
-        "fis-postprocessor-autoprefixer": "^0.0.5",
-        "fis3-hook-commonjs": "^0.1.25",
-        "fis3-hook-node_modules": "^2.2.8",
-        "fis3-postpackager-loader": "^2.1.4"
     }
 }
