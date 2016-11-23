@@ -12,42 +12,26 @@ module.exports = {
     "name": {
       "type": "string",
       "required": true,
-      "message": "Project name"
+      "message": "项目名（name）"
     },
     "description": {
       "type": "string",
       "required": false,
-      "message": "Project description",
-      "default": "A Vue.js project"
+      "message": "描述（description）",
+      "default": "这个项目让我发家致富…"
     },
     "author": {
       "type": "string",
-      "message": "Author"
-    },
-    "build": {
-      "type": "list",
-      "message": "Vue build",
-      "choices": [
-        {
-          "name": "Runtime + Compiler: recommended for most users",
-          "value": "standalone",
-          "short": "standalone"
-        },
-        {
-          "name": "Runtime-only: about 6KB lighter min+gzip, but templates (or any Vue-specific HTML) are ONLY allowed in .vue files - render functions are required elsewhere",
-          "value": "runtime",
-          "short": "runtime"
-        }
-      ]
+      "message": "作者（Author）"
     },
     "lint": {
       "type": "confirm",
-      "message": "Use ESLint to lint your code?"
+      "message": "使用 ESLint ?"
     },
     "lintConfig": {
       "when": "lint",
       "type": "list",
-      "message": "Pick an ESLint preset",
+      "message": "选择一个 ESLint 版本",
       "choices": [
         {
           "name": "Standard (https://github.com/feross/standard)",
