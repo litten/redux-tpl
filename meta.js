@@ -80,5 +80,5 @@ module.exports = {
     "test/unit/**/*": "unit",
     "test/e2e/**/*": "e2e"
   },
-  "completeMessage": "开始运行:\n\n  cd {{destDirName}}\n  1、npm install -g fis3 fis-parser-babel-5.x fis-parser-node-sass fis-postprocessor-autoprefixer fis3-hook-commonjs fis3-hook-node_modules fis3-postpackager-loader eslint  \n 2、npm install\n  3、npm run dev\n\n 祝你好运：）"
+  "completeMessage": "开始运行:\n\n  1、cd {{destDirName}}\n  2、npm install -g fis3 fis-parser-babel-5.x fis-parser-node-sass fis-postprocessor-autoprefixer fis3-hook-commonjs fis3-hook-node_modules fis3-postpackager-loader eslint  \n  2、npm install\n  3、npm run dev\n\n\n  祝你好运：）"
 };
