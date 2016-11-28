@@ -3,9 +3,9 @@
 const CONFIG = {
   'domain': {
     'main': '//ke.qq.com',
-    'js': '//7.url.cn/edu/crm',
-    'css': '//8.url.cn/edu/crm',
-    'img': '//9.url.cn/edu/crm'
+    'js': '//7.url.cn/edu/{{ name }}',
+    'css': '//8.url.cn/edu/{{ name }}',
+    'img': '//9.url.cn/edu/{{ name }}'
   }
 };
 
@@ -90,10 +90,10 @@ fis.media('dist').match('!**.map', {
   domain: CONFIG.domain.main,
   deploy: [
     fis.plugin('local-deliver', {
-      to: './public/cdn/crm'
+      to: './public/cdn/{{ name }}'
     }),
     fis.plugin('local-deliver', {
-      to: './public/webserver/crm'
+      to: './public/webserver/{{ name }}'
     })
   ]
 }).match('**.{js,jsx}', {
@@ -102,11 +102,10 @@ fis.media('dist').match('!**.map', {
   domain: CONFIG.domain.css
 }).match('::image', {
   domain: CONFIG.domain.img
-}).match('**.ttf', {
+}).match('**.{ttf,eot,svg,woff}', {
   domain: CONFIG.domain.img
-}).match('**/assets/images/share.png', {
-  domain: CONFIG.domain.main
 });
+
 // 隐藏demo
 fis.media('dist').match('**/demo/**.*', {
   release: false

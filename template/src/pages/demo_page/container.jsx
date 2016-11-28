@@ -27,8 +27,8 @@ class Container extends React.Component {
 
   componentDidMount() {
     const dispatch = this.props.dispatch;
-    dispatch(fetch_student_basic_info());
-    dispatch(fetch_follow_state());
+    dispatch(fetchGlobalDemo());
+    dispatch(fetchPageDemo());
   }
 }
 

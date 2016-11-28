@@ -27,37 +27,25 @@ module.exports = {
       "type": "confirm",
       "message": "使用 ESLint ?"
     },
-    "lintConfig": {
-      "when": "lint",
-      "type": "list",
-      "message": "选择一个 ESLint 版本",
-      "choices": [
-        {
-          "name": "Standard (https://github.com/feross/standard)",
-          "value": "standard",
-          "short": "Standard"
-        },
-        {
-          "name": "AirBNB (https://github.com/airbnb/javascript)",
-          "value": "airbnb",
-          "short": "AirBNB"
-        },
-        {
-          "name": "none (configure it yourself)",
-          "value": "none",
-          "short": "none"
-        }
-      ]
-    },
     "tdw": {
       "type": "string",
       "message": "tdw opername",
       "default": "Edu"
     },
-    "isd": {
+    "isd-flag1": {
       "type": "string",
-      "message": "isd id",
-      "default": "10241024"
+      "message": "isd测速flag1",
+      "default": "1613"
+    },
+    "isd-flag2": {
+      "type": "string",
+      "message": "isd测速flag2",
+      "default": ""
+    },
+    "isd-flag3": {
+      "type": "string",
+      "message": "isd测速flag3",
+      "default": ""
     },
     "badjs": {
       "type": "string",
@@ -66,19 +54,14 @@ module.exports = {
     },
     "unit": {
       "type": "confirm",
-      "message": "Setup unit tests with Karma + Mocha?"
-    },
-    "e2e": {
-      "type": "confirm",
-      "message": "Setup e2e tests with Nightwatch?"
+      "message": "单元测试 Karma + Mocha?"
     }
   },
   "filters": {
     ".eslintrc.js": "lint",
     ".eslintignore": "lint",
-    "config/test.env.js": "unit || e2e",
-    "test/unit/**/*": "unit",
-    "test/e2e/**/*": "e2e"
+    "config/test.env.js": "unit",
+    "test/unit/**/*": "unit"
   },
   "completeMessage": "开始运行:\n\n  1、cd {{destDirName}}\n  2、npm install -g fis3 fis-parser-babel-5.x fis-parser-node-sass fis-postprocessor-autoprefixer fis3-hook-commonjs fis3-hook-node_modules fis3-postpackager-loader eslint  \n  2、npm install\n  3、npm run dev\n\n\n  祝你好运：）"
 };
