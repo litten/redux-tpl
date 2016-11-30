@@ -1,3 +1,10 @@
+/**
+ * @name page:{{name}} - index
+ * @description {{description}}
+ * @author {{author}}
+ * @date {{date}}
+ */
+
 require('../../assets/polyfill');
 import React from 'react';
 import ReactDom from 'react-dom';

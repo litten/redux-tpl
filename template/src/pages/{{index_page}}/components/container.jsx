@@ -1,3 +1,10 @@
+/**
+ * @name page:{{name}} - components - container
+ * @description {{description}}
+ * @author {{author}}
+ * @date {{date}}
+ */
+
 'use strict';
 import React from 'react';
 import { connect } from 'react-redux';

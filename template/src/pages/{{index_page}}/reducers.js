@@ -1,3 +1,10 @@
+/**
+ * @name page:{{name}} - reducer
+ * @description {{description}}
+ * @author {{author}}
+ * @date {{date}}
+ */
+
 'use strict';
 import { combineReducers } from 'redux';
 import * as globalReducers from '../../reducers';

@@ -1,3 +1,10 @@
+/**
+ * @name page:{{name}} - actions
+ * @description {{description}}
+ * @author {{author}}
+ * @date {{date}}
+ */
+
 'use strict';
 import React from 'react';
 import request from '@tencent/ke_fetch';

@@ -21,28 +21,29 @@ module.exports = {
     },
     "author": {
       "type": "string",
-      "message": "作者（Author）"
+      "message": "作者（author）"
     },
-    "lint": {
-      "type": "confirm",
-      "message": "使用 ESLint ?"
+    "index_page": {
+      "type": "string",
+      "message": "首页名称",
+      "default": "index"
     },
     "tdw": {
       "type": "string",
       "message": "tdw opername",
       "default": "Edu"
     },
-    "isd-flag1": {
+    "isd_flag1": {
       "type": "string",
       "message": "isd测速flag1",
       "default": "1613"
     },
-    "isd-flag2": {
+    "isd_flag2": {
       "type": "string",
       "message": "isd测速flag2",
       "default": ""
     },
-    "isd-flag3": {
+    "isd_flag3": {
       "type": "string",
       "message": "isd测速flag3",
       "default": ""
@@ -52,16 +53,20 @@ module.exports = {
       "message": "badjs id",
       "default": "10241024"
     },
+    "lint": {
+      "type": "confirm",
+      "message": "使用 ESLint ?"
+    },
     "unit": {
       "type": "confirm",
-      "message": "单元测试 Karma + Mocha?"
+      "message": "使用 单元测试?"
     }
   },
   "filters": {
     ".eslintrc.js": "lint",
     ".eslintignore": "lint",
     "config/test.env.js": "unit",
-    "test/unit/**/*": "unit"
+    "test/**/*": "unit"
   },
   "completeMessage": "开始运行:\n\n  1、cd {{destDirName}}\n  2、npm install -g fis3 fis-parser-babel-5.x fis-parser-node-sass fis-postprocessor-autoprefixer fis3-hook-commonjs fis3-hook-node_modules fis3-postpackager-loader eslint  \n  2、npm install\n  3、npm run dev\n\n\n祝你好运：）"
 };
