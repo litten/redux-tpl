@@ -1,46 +1,39 @@
 module.exports = {
-  root: true,
+  extends: ['eslint-config-airbnb'],
+  env: {
+    browser: true,
+    node: true,
+    mocha: true,
+    jest: true,
+    es6: true
+  },
   parser: 'babel-eslint',
   parserOptions: {
-    sourceType: 'module'
-  },
-  {{#if_eq lintConfig "standard"}}
-  // https://github.com/feross/standard/blob/master/RULES.md#javascript-standard-style
-  extends: 'standard',
-  {{/if_eq}}
-  {{#if_eq lintConfig "airbnb"}}
-  extends: 'airbnb-base',
-  {{/if_eq}}
-  // required to lint *.vue files
-  plugins: [
-    'html'
-  ],
-  {{#if_eq lintConfig "airbnb"}}
-  // check if imports actually resolve
-  'settings': {
-    'import/resolver': {
-      'webpack': {
-        'config': 'build/webpack.base.conf.js'
-      }
+    ecmaVersion: 6,
+    ecmaFeatures: {
+      jsx: true,
+      experimentalObjectRestSpread: true
     }
   },
-  {{/if_eq}}
-  // add your custom rules here
-  'rules': {
-    {{#if_eq lintConfig "standard"}}
-    // allow paren-less arrow functions
-    'arrow-parens': 0,
-    // allow async-await
-    'generator-star-spacing': 0,
-    {{/if_eq}}
-    {{#if_eq lintConfig "airbnb"}}
-    // don't require .vue extension when importing
-    'import/extensions': ['error', 'always', {
-      'js': 'never',
-      'vue': 'never'
+  plugins: [
+    'react',
+    'babel'
+  ],
+  rules: {
+    'curly': [2, 'all'],
+    'func-names': 0,
+    'prefer-const': 0,
+    'arrow-body-style': 0,
+    'react/sort-comp': 0,
+    'react/prop-types': 0,
+    'react/jsx-first-prop-new-line': 0,
+    'import/no-unresolved': 0,
+    'no-param-reassign': 0,
+    'no-return-assign': 0,
+    'max-len': [2, {
+      'code': 120
     }],
-    {{/if_eq}}
-    // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0
+    'consistent-return': 0,
+    'comma-dangle': 0
   }
 }
