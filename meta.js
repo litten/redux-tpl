@@ -62,6 +62,10 @@ module.exports = {
       "message": "使用 单元测试?"
     }
   },
+  "shims": {
+    "page": "index_page",
+    "spa": "shim@spa"
+  },
   "filters": {
     ".eslintrc.js": "lint",
     ".eslintignore": "lint",
