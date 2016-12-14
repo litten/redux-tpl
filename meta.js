@@ -63,8 +63,11 @@ module.exports = {
     }
   },
   "shims": {
-    "page": "index_page",
-    "spa": "shim@spa"
+    "index_page": {
+      "type": "string",
+      "message": "页面名称",
+      "default": "index"
+    }
   },
   "filters": {
     ".eslintrc.js": "lint",
