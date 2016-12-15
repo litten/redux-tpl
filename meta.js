@@ -68,6 +68,10 @@ module.exports = {
         "type": "string",
         "message": "新增页面名称？",
         "default": "index"
+      },
+      "spa": {
+        "type": "confirm",
+        "message": "是否单页应用 ?"
       }
     }
   },

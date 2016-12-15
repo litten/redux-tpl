@@ -24,6 +24,10 @@ if (process.env.NODE_ENV === 'development') {
   store = createStore(reduces, undefined, applyMiddleware(thunkMiddleware));
 }
 
+{{#spa}}
+// 这是一个单页应用
+{{/spa}}
+
 ReactDom.render(
   <Provider store={store}>
     <Container/>
